@@ -31,11 +31,17 @@ User first signs up for an account to verify and sync particulars. During this p
 ### 2. View Best-matched Community
 User can then find the community that have high match ratings and view information or available apartments in the community.
 
+![community_guide](/assets/home1.png)![more_info](/assets/more_info_community.png)
+
 ### 3. Read Articles
 User can view helpful articles about life in Singapore including work culture or community programs to better prepare.
 
+![article_guide](/assets/home2.png)
+
 ### 4. Make Friends
 User can view Telegram communities or Facebook groups based in Singapore. These groups and communities are suggested based on user's cultural and lifestyle preferences.
+
+![groups](/assets/group_join.png)
 
 
 
