@@ -19,7 +19,7 @@ class AppList extends StatelessWidget {
         ),
         VerticalSpacing(of: 20),
         Container(
-          height: 20.0,
+          height: 200.0,
         )
       ],
     );

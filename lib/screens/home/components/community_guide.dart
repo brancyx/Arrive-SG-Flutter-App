@@ -33,16 +33,15 @@ class CommunityGuide extends StatelessWidget {
                         AlertDialog(
                       content: new Column(
                         mainAxisSize: MainAxisSize.min,
-                        crossAxisAlignment:
-                            CrossAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Container(
                             height: 650,
                             width: 400,
                             child: new Padding(
-                              padding:
-                                  const EdgeInsets.all(8.0),
-                              child: Stack (
+                              padding: const EdgeInsets.all(8.0),
+                                child: Column(
+
                                 children: [
                                   Container(
                                     child: Center(
@@ -101,23 +100,6 @@ class CommunityGuide extends StatelessWidget {
                                                 SizedBox(
                                                     height:
                                                         20),
-                                                Column (
-                                                  mainAxisAlignment: MainAxisAlignment.end,
-                                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                                  children: <Widget> [
-                                                    Text(
-                                                      community.country,
-                                                      style: const TextStyle(
-                                                          fontSize:
-                                                              10,
-                                                          color:
-                                                              Colors.black),
-                                                    )
-                                                  ]
-                                                ),
-                                                SizedBox(
-                                                    height:
-                                                        15),
                                                 
                                               ],
                                             ),
@@ -127,22 +109,31 @@ class CommunityGuide extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                  Positioned(
-                                    bottom: 10.0,
-                                    left: 60.0,
-                                    child: 
-                                    Row(
-                                        children: [
-                                          ElevatedButton(
-                                              onPressed:() {},
-                                              child: Text("View apartments"))
-                                        ],
-                                      ),
-                                  )
+                                  Column (
+                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget> [
+                                      Container(
+                                        child: Text(
+                                          community.country,
+                                          style: const TextStyle(
+                                              fontSize:
+                                                  10,
+                                              color:
+                                                  Colors.black),
+                                        ),
+                                      )
+                                    ]
+                                  ),
+                                  SizedBox(height: 15),
                                 ],
-                              ),
                             ),
                           ),
+                          ),
+                          ElevatedButton(
+                            onPressed: () {}, 
+                            child: Text("View Available Apartments")
+                            )
                         ],
                       ),
                     ),
