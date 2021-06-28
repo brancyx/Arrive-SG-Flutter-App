@@ -43,6 +43,10 @@ User can view Telegram communities or Facebook groups based in Singapore. These 
 
 ![groups](/assets/images/group_join.png)
 
+## Video Demo
+
+![Alt Text](https://media.giphy.com/media/LDlahkb9g1ZcPl06CU/giphy.gif)
+
 ## Solution Architecture
 
 ![groups](/assets/images/technical_arch.png)
