@@ -20,6 +20,8 @@ class AppList extends StatelessWidget {
         VerticalSpacing(of: 20),
         Container(
           height: 200.0,
+          child: 
+          Image.asset('assets/images/apps.png')
         )
       ],
     );

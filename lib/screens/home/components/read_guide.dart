@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:travel/components/section_title.dart';
 import 'package:travel/screens/home/components/communities.dart';
 
+import '../../../constants.dart';
+import '../../../size_config.dart';
+import '../../../size_config.dart';
 import '../../../size_config.dart';
 import '../../../size_config.dart';
 
@@ -20,21 +23,28 @@ class ReadGuide extends StatelessWidget {
         ),
         VerticalSpacing(of: 20),
         Container(
-          height: 350.0,
+          height: 320.0,
           child: Column(
             children: [
-              Container(
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(kDefaultPadding),
+                ),
                 child: Row(
-                  children: <Widget> [
+                  children: [
                     Container(
                       height: 50,
-                      width: 320,
+                      width: 250,
+                      child: Text(
+                        "How many hours do Singaporeans work every month?",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: getProportionateScreenWidth(13),
+                        ),
+                      ),
                     ),
-                    Container(
-                      child: 
-                      Hero(
-                        tag: 'assets/images/work.png',
-                        child: ClipRRect(
+                    Spacer(),
+                    ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
                           child: Image(
                             height: 70.0,
@@ -43,24 +53,29 @@ class ReadGuide extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                    ),
-                  ]
-                )
+                  ],
+                ),
               ),
               VerticalSpacing(of:20),
-              Container(
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(kDefaultPadding),
+                ),
                 child: Row(
-                  children: <Widget> [
+                  children: [
                     Container(
                       height: 50,
-                      width: 320,
+                      width: 250,
+                      child: Text(
+                        "What is the average family spending per week",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: getProportionateScreenWidth(13),
+                        ),
+                      ),
                     ),
-                    Container(
-                      child: 
-                      Hero(
-                        tag: 'assets/images/economy.png',
-                        child: ClipRRect(
+                    Spacer(),
+                    ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
                           child: Image(
                             height: 70.0,
@@ -69,24 +84,29 @@ class ReadGuide extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                    ),
-                  ]
-                )
+                  ],
+                ),
               ),
-              VerticalSpacing(of:20),
-              Container(
+              VerticalSpacing(of: 20,),
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: getProportionateScreenWidth(kDefaultPadding),
+                ),
                 child: Row(
-                  children: <Widget> [
+                  children: [
                     Container(
                       height: 50,
-                      width: 320,
+                      width: 250,
+                      child: Text(
+                        "Defining the age of marriage in Singapore",
+                        style: TextStyle(
+                          fontWeight: FontWeight.w300,
+                          fontSize: getProportionateScreenWidth(13),
+                        ),
+                      ),
                     ),
-                    Container(
-                      child: 
-                      Hero(
-                        tag: 'assets/images/family.png',
-                        child: ClipRRect(
+                    Spacer(),
+                    ClipRRect(
                           borderRadius: BorderRadius.circular(20.0),
                           child: Image(
                             height: 70.0,
@@ -95,10 +115,8 @@ class ReadGuide extends StatelessWidget {
                             fit: BoxFit.cover,
                           ),
                         ),
-                      ),
-                    ),
-                  ]
-                )
+                  ],
+                ),
               ),
             ],
           ),

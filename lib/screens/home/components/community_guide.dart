@@ -122,10 +122,11 @@ class CommunityGuide extends StatelessWidget {
                                               color:
                                                   Colors.black),
                                         ),
-                                      )
+                                      ),
+                                      SizedBox(height: 35),
+                                      Image.asset('assets/images/match.png')
                                     ]
                                   ),
-                                  SizedBox(height: 15),
                                 ],
                             ),
                           ),
