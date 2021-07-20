@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travel/components/section_title.dart';
+import 'package:travel/components/pop_up.dart';
 import 'package:travel/screens/home/components/communities.dart';
 
 import '../../../constants.dart';
@@ -29,6 +30,16 @@ class ReadGuide extends StatelessWidget {
               GestureDetector(
                 onTap: () {
                   print("Container clicked");
+                  showDialog(
+                    context: context,
+                    builder: (BuildContext context) =>
+                      PopUp(
+                        title: "How many hours do Singaporeans work every month?",
+                        imgLink: 'assets/images/work.png',
+                        description: "Container opened",
+                        buttonText: "View more",
+                      ),
+                  );
                 },
                 child: Padding(
                   padding: EdgeInsets.symmetric(
