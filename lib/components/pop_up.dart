@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
+
 
 import '../constants.dart';
 import '../size_config.dart';
@@ -60,7 +62,9 @@ class PopUp extends StatelessWidget {
           ),
           if (buttonText!="") 
             ElevatedButton(
-              onPressed: () {}, 
+              onPressed: () {
+                launch('https://brancyx.github.io/my-portfolio/#/');
+              }, 
               child: Text(buttonText),
             )
         ],
