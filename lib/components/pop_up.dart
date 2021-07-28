@@ -45,17 +45,19 @@ class PopUp extends StatelessWidget {
                   SizedBox(height: 20,),
                   Padding(
                     padding: const EdgeInsets.only(top: 0.0),
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20.0),
-                      child: Image(
-                        height: 70.0,
-                        width: 70.0,
-                        image: AssetImage(imgLink),
-                        fit: BoxFit.cover,
-                      ),
+                    child: Image.asset(
+                      imgLink,
+                      width: 250,
                     ),
                   ),
-                  SizedBox(height: 70,)
+                  SizedBox(height: 70,),
+                  Text(
+                    description,
+                    style: const TextStyle(
+                      fontSize: 15,
+                      color: Colors.black
+                    ),
+                  ),
                 ],
               ),
             )
