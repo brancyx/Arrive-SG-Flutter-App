@@ -27,38 +27,40 @@ class PopUp extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            height: 650,
-            width: 400,
+            height: getProportionateScreenHeight(455),
+            width: getProportionateScreenWidth(400),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  Text(
-                    title, 
-                    textAlign: TextAlign.center,
-                    style: const TextStyle(
-                      fontSize: 25,
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold
+              child: SingleChildScrollView(
+                child: Column(
+                  children: [
+                    Text(
+                      title, 
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                        fontSize: 25,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 20,),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 0.0),
-                    child: Image.asset(
-                      imgLink,
-                      width: 250,
+                    // SizedBox(height: 20,),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20.0, bottom: 20.0),
+                      child: Image.asset(
+                        imgLink,
+                        width: 200,
+                      ),
                     ),
-                  ),
-                  SizedBox(height: 70,),
-                  Text(
-                    description,
-                    style: const TextStyle(
-                      fontSize: 15,
-                      color: Colors.black
+                    SizedBox(height: getProportionateScreenHeight(20),),
+                    Text(
+                      description,
+                      style: const TextStyle(
+                        fontSize: 15,
+                        color: Colors.black
+                      ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               ),
             )
           ),
