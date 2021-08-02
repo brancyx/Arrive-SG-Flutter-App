@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:travel/screens/events/events_screen.dart';
+import 'package:travel/screens/profile/profile_screen.dart';
 
 import '../constants.dart';
 import '../screens/events/events_screen.dart';
@@ -122,7 +123,7 @@ class _NavState extends State<CustomBottonNavBar> {
   List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
     EventsScreen(),
-    Text('Profile Screen'),
+    ProfileScreen(),
   ];
   
   void _onItemTap(int index) {
